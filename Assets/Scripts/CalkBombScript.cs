@@ -13,15 +13,13 @@ public class CalkBombScript : MonoBehaviour {
 	void Start () {
 		StartCoroutine (OnDestroyWhenParticleStop ());	
 	}
-	
 
 	void Update () {
 		
 	}
 
 	IEnumerator OnDestroyWhenParticleStop(){
-		yield return new WaitWhile (() => 
-			particle.IsAlive (withChildren: true));
+		yield return new WaitWhile (() => particle.IsAlive (withChildren: true));
 		Destroy (this.gameObject);
 	}
 }

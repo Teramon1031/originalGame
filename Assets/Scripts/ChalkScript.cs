@@ -5,15 +5,18 @@ using UnityEngine;
 public class ChalkScript : MonoBehaviour {
 	
 	private Rigidbody _rigidbody;
+	private Renderer _renderer;
+	public Material[] materials = new Material[5];
 
 	void Awake () {
 		_rigidbody = this.GetComponent<Rigidbody> ();
+		_renderer = this.GetComponent<Renderer> ();
 	}
 
 	void Start () {
-		this._rigidbody.AddForce (Vector3.up * 200);
-		this._rigidbody.AddForce (Vector3.forward * 300);
-
+		_renderer.material = materials [Random.Range (0, 5)];
+		this._rigidbody.AddRelativeForce (-transform.forward * 40);
+		this._rigidbody.AddForce (Vector3.up * 15);
 	}
 
 	void Update () {
@@ -21,9 +24,11 @@ public class ChalkScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		Destroy (this.gameObject);
-		if (col.gameObject.tag == "enemy") {
-			enemyScript.EnemyHP--;
+		if (col.gameObject.tag == "player") {
+			muzzleScript.ChalkPowder++;
+		}
+		if (col.gameObject.tag != "stage") {
+			Destroy (this.gameObject);
 		}
 	}
 }

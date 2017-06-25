@@ -6,6 +6,10 @@ TagManager:
   tags:
   - chalk
   - enemy
+  - player
+  - EnemyWeapon
+  - stage
+  - ChalkGrenade
   layers:
   - Default
   - TransparentFX
