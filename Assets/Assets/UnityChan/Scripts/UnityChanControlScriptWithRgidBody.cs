@@ -178,7 +178,7 @@ namespace UnityChan
 			}
 		}
 
-		void OnGUI ()
+		/*void OnGUI ()
 		{
 			GUI.Box (new Rect (Screen.width - 260, 10, 250, 150), "Interaction");
 			GUI.Label (new Rect (Screen.width - 245, 30, 250, 30), "Up/Down Arrow : Go Forwald/Go Back");
@@ -187,7 +187,7 @@ namespace UnityChan
 			GUI.Label (new Rect (Screen.width - 245, 90, 250, 30), "Hit Spase key while Stopping : Rest");
 			GUI.Label (new Rect (Screen.width - 245, 110, 250, 30), "Left Control : Front Camera");
 			GUI.Label (new Rect (Screen.width - 245, 130, 250, 30), "Alt : LookAt Camera");
-		}
+		}*/
 
 
 		// キャラクターのコライダーサイズのリセット関数
