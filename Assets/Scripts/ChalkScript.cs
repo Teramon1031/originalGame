@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/* 生成されたらランダムに色がついて飛んでいく
+ * プレイヤーがチョークに触れるとプレイヤーのもつ粉(集めるとチョーク爆弾になる)を増やす
+ * ステージ以外にぶつかったらチョークを消滅させる */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,10 +21,6 @@ public class ChalkScript : MonoBehaviour {
 		_renderer.material = materials [Random.Range (0, 5)];
 		this._rigidbody.AddRelativeForce (-transform.forward * 40);
 		this._rigidbody.AddForce (Vector3.up * 15);
-	}
-
-	void Update () {
-		
 	}
 
 	void OnCollisionEnter(Collision col){

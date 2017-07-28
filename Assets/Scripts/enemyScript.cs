@@ -1,32 +1,29 @@
-﻿using System.Collections;
+﻿/* 敵がプレイヤーを追従し常にプレイヤーをむく
+ * 5秒ごとに武器を発射
+ * プレイヤーが近づくとプレイヤーのHPを0にする
+ * プレイヤーの武器が当たるとダメージを受ける 
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class enemyScript : MonoBehaviour {
 	
-	private int EnemyHP = 3;
 	public GameObject player;
 	public Transform target;
-	NavMeshAgent agent;
 	public Transform muzzle;
 	public GameObject weaponA;
-
-	public GameObject Enemies;
-
 	private float interval;
+	private int EnemyHP = 3;
+	NavMeshAgent agent;
 
 	void Awake () {
 		agent = GetComponent<NavMeshAgent> ();
 	}
-
-	void Start () {
 		
-	}
-
 	void Update () {
-//		transform.LookAt (target);
-//		transform.position += transform.TransformDirection (Vector3.forward) * Time.deltaTime;
 		agent.SetDestination(target.position);
 		PlayerApproach ();
 		interval += 1 * Time.deltaTime;
@@ -48,7 +45,7 @@ public class enemyScript : MonoBehaviour {
 		float dis = Vector3.Distance (playerPos, enemyPos);
 
 		if (dis < 1) {
-			PlayerScript.playerHP -= 5;
+			PlayerScript.playerHP = 0;
 		}
 	}
 

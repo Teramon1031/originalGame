@@ -9,7 +9,7 @@ public class muzzleScript : MonoBehaviour {
 	public GameObject ChalkGrenade;
 	private int ChalkNumber;
 	public static int ChalkPowder = 10;
-	public Text ChalkNumberText;
+//	public Text ChalkNumberText;
 
 	void Start () {
 		ChalkNumber = 10;
@@ -30,6 +30,6 @@ public class muzzleScript : MonoBehaviour {
 				ChalkPowder -= 5;
 			}
 		}
-		ChalkNumberText.text = "Chalk : \t" + ChalkNumber.ToString ();
+//		ChalkNumberText.text = "Chalk : \t" + ChalkNumber.ToString ();
 	}
 }

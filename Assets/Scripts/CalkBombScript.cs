@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//パーティクルが再生し終わったらオブジェクトを削除 
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,11 +15,7 @@ public class CalkBombScript : MonoBehaviour {
 	void Start () {
 		StartCoroutine (OnDestroyWhenParticleStop ());	
 	}
-
-	void Update () {
 		
-	}
-
 	IEnumerator OnDestroyWhenParticleStop(){
 		yield return new WaitWhile (() => particle.IsAlive (withChildren: true));
 		Destroy (this.gameObject);
