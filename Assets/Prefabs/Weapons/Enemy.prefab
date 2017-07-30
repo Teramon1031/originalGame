@@ -1577,7 +1577,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1775322839359140}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.2, y: -1.2000003, z: 4.6}
+  m_LocalPosition: {x: -0.2, y: -0.4, z: 4.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4572648199193010}
@@ -2408,7 +2408,6 @@ MonoBehaviour:
   target: {fileID: 0}
   muzzle: {fileID: 4778289988517138}
   weaponA: {fileID: 1583240173485652, guid: 40e8170715c52444786573f372eaecd6, type: 2}
-  Enemies: {fileID: 0}
 --- !u!136 &136658999959947064
 CapsuleCollider:
   m_ObjectHideFlags: 1

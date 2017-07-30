@@ -5,35 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	public GameObject Cleartext;
-	public GameObject enemies;
-	public GameObject LifeText;
-	public GameObject ChalkText;
-	private float ClearInterval;
+	public GameObject enemy;
 
 	void Start () {
-		Cleartext.SetActive (false);
+//		for (int i; i < 20; i++) {
+//			Instantiate(enemy,new Vector3(Random.Range(6.2f,10f), -0.4f, Random.Range())
+//		}
 	}
 
 	void Update () {
-		if (enemies.transform.childCount == 0) {
-			Clear ();
-		} 
-	}
-
-	void Clear () {
-		Cleartext.SetActive (true);
-		LifeText.SetActive (false);
-		ChalkText.SetActive (false);
-		ClearInterval += Time.deltaTime;
-
-		if (ClearInterval >= 2) {
-			ClearInterval = 0;
-			Cleartext.SetActive (false);
-			LifeText.SetActive (true);
-			ChalkText.SetActive (true);
-			SceneManager.LoadScene ("Clear");
-		}
 
 	}
+		
 }
