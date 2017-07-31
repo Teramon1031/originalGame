@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour {
 	private bool playerLife = true;
 	public static int playerHP = 5;
 	private float interval;
+	private bool clear;
 
 //	public Text LifeText;
 
@@ -31,5 +32,8 @@ public class PlayerScript : MonoBehaviour {
 
 //		LifeText.text = "LIFE : \t" + playerHP.ToString ();
 
+	}
+	void OnTriggerEnter(Collider col){
+			SceneManager.LoadScene ("Title");
 	}
 }

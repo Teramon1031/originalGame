@@ -8,9 +8,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject enemy;
 
 	void Start () {
-//		for (int i; i < 20; i++) {
-//			Instantiate(enemy,new Vector3(Random.Range(6.2f,10f), -0.4f, Random.Range())
-//		}
+		for (int i = 1; i < 10; i++) {
+			Instantiate (enemy, new Vector3 (Random.Range (8f, 10f), -0.4f, Random.Range (13f, 25f)), transform.rotation);
+		}
 	}
 
 	void Update () {

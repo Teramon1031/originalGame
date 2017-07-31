@@ -25,9 +25,7 @@ public class enemyScript : MonoBehaviour {
 		
 	void Update () {
 		agent.SetDestination(target.position);
-		PlayerApproach ();
 		interval += 1 * Time.deltaTime;
-
 		if (EnemyHP <= 0) {
 			Destroy (this.gameObject);
 		}
@@ -39,17 +37,20 @@ public class enemyScript : MonoBehaviour {
 
 	}
 
-	void PlayerApproach () {
-		Vector3 playerPos = player.transform.position;
-		Vector3 enemyPos = this.transform.position;
-		float dis = Vector3.Distance (playerPos, enemyPos);
-
-		if (dis < 1) {
-			PlayerScript.playerHP = 0;
-		}
-	}
+//	void PlayerApproach () {
+//		Vector3 playerPos = player.transform.position;
+//		Vector3 enemyPos = this.transform.position;
+//		float dis = Vector3.Distance (playerPos, enemyPos);
+//
+//		if (dis < 1) {
+//			PlayerScript.playerHP = 0;
+//		}
+//	}
 
 	void OnCollisionEnter(Collision col){
+		if (col.gameObject.tag == "player") {
+			PlayerScript.playerHP = 0;
+		}
 		if (col.gameObject.tag == "chalk") {
 			EnemyHP--;
 		}

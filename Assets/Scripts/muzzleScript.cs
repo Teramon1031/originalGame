@@ -12,24 +12,24 @@ public class muzzleScript : MonoBehaviour {
 //	public Text ChalkNumberText;
 
 	void Start () {
-		ChalkNumber = 10;
-		ChalkPowder = 5;
+//		ChalkNumber = 10;
+//		ChalkPowder = 5;
 	}
 	
 
 	void Update () {
-		if (ChalkNumber > 0) {
+//		if (ChalkNumber > 0) {
 			if (Input.GetKeyDown (KeyCode.Alpha1)) {
 				Instantiate (Chalk, this.transform.position, this.transform.rotation);
-				ChalkNumber--;
+//				ChalkNumber--;
 			}
-		}
-		if (ChalkPowder >= 5) {
+//		}
+//		if (ChalkPowder >= 5) {
 			if (Input.GetKeyDown (KeyCode.Alpha2)) {
 				Instantiate (ChalkGrenade, this.transform.position, this.transform.rotation);
-				ChalkPowder -= 5;
+//				ChalkPowder -= 5;
 			}
-		}
+//		}
 //		ChalkNumberText.text = "Chalk : \t" + ChalkNumber.ToString ();
 	}
 }

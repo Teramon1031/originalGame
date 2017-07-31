@@ -8,15 +8,15 @@ using UnityEngine.SceneManagement;
 public class SceneManagerScript : MonoBehaviour {
 
 	public void DoReplay () {
-		SceneManager.LoadScene ("Main");
+		SceneManager.LoadScene ("Stage1");
 	}
 
 	public void DoReturnToTitle () {
 		SceneManager.LoadScene ("Title");
 	}
 
-	public void GameStart () {
-		SceneManager.LoadScene ("Main");
+	public void GameStart1 () {
+		SceneManager.LoadScene ("Stage1");
 	}
 
 }

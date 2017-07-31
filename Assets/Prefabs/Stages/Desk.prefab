@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4942369868686358}
-  - component: {fileID: 54643849292648246}
+  - component: {fileID: 54243455202655830}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -679,7 +679,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1398319606585560}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54643849292648246
+--- !u!54 &54243455202655830
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
