@@ -1,15 +1,18 @@
-﻿using System.Collections;
+﻿//プレイヤーが近づいた時&生成ポイントが視界外の時敵を生成する
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyInstantiatescript : MonoBehaviour {
 
-	// Use this for initialization
+	public Transform player;
+
+
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		
 	}
