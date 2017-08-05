@@ -1,6 +1,6 @@
 ﻿/* 敵がプレイヤーを追従し常にプレイヤーをむく
  * 5秒ごとに武器を発射
- * プレイヤーが近づくとプレイヤーのHPを0にする
+ * プレイヤーにぶつかるプレイヤーのHPを0になる
  * プレイヤーの武器が当たるとダメージを受ける 
  */
 
@@ -36,16 +36,6 @@ public class enemyScript : MonoBehaviour {
 		}
 
 	}
-
-//	void PlayerApproach () {
-//		Vector3 playerPos = player.transform.position;
-//		Vector3 enemyPos = this.transform.position;
-//		float dis = Vector3.Distance (playerPos, enemyPos);
-//
-//		if (dis < 1) {
-//			PlayerScript.playerHP = 0;
-//		}
-//	}
 
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "player") {

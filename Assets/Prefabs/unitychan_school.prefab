@@ -2423,7 +2423,6 @@ GameObject:
   - component: {fileID: 136209853193058270}
   - component: {fileID: 114986234346781868}
   - component: {fileID: 114959161376536010}
-  - component: {fileID: 114428039661238220}
   m_Layer: 0
   m_Name: unitychan_school
   m_TagString: player
@@ -5273,21 +5272,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114428039661238220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1946239506598618}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f350343a595fb40f880a8968f037aa85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cleartext: {fileID: 0}
-  enemies: {fileID: 0}
-  LifeText: {fileID: 0}
-  ChalkText: {fileID: 0}
 --- !u!114 &114621265661556698
 MonoBehaviour:
   m_ObjectHideFlags: 1
