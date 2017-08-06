@@ -819,6 +819,7 @@ GameObject:
   - component: {fileID: 114248763771333234}
   - component: {fileID: 195242364421391538}
   - component: {fileID: 54388351947919308}
+  - component: {fileID: 95044026647908468}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: enemy
@@ -2409,6 +2410,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &95044026647908468
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775322839359140}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e6ab94ea3d7bfb840aa41680fa79570e, type: 3}
+  m_Controller: {fileID: 9100000, guid: 084f0e8bede7445019c09e9b48eba09e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114248763771333234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2420,8 +2438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f55725f0f09be4e3ab80d529abdc5cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1946239506598618, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
-  target: {fileID: 4216891014316490, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+  player: {fileID: 0}
+  target: {fileID: 0}
   muzzle: {fileID: 4778289988517138}
   weaponA: {fileID: 1583240173485652, guid: 40e8170715c52444786573f372eaecd6, type: 2}
 --- !u!136 &136658999959947064

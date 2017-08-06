@@ -586,6 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &99695527
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6313,6 +6314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &637716893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6393,6 +6395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &652609771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6779,6 +6782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &753046166
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8500,6 +8504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &1145791753
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9066,6 +9071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &1273588019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9249,6 +9255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &1347834765
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9644,6 +9651,24 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114621265661556698, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1411789645}
+    - target: {fileID: 114621265661556698, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1411789639}
+    - target: {fileID: 4522117742098380, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522117742098380, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
   m_IsPrefabParent: 0
@@ -9652,18 +9677,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1946239506598618, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
     type: 2}
   m_PrefabInternal: {fileID: 1411789638}
---- !u!65 &1411789640
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1411789639}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.3, y: 1.5, z: 0.4}
-  m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!95 &1411789645 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95336450969952030, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 1411789638}
 --- !u!4 &1411789646 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4216891014316490, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
@@ -9800,6 +9818,7 @@ MonoBehaviour:
   DoorCloseText: {fileID: 181311231}
   Player: {fileID: 1411789639}
   Door: {fileID: 616769370}
+  DoorOpenFlg: 0
 --- !u!1 &1476908374
 GameObject:
   m_ObjectHideFlags: 0
@@ -9936,6 +9955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &1502990715
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10149,7 +10169,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1578371973}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3, y: 0, z: 14}
+  m_LocalPosition: {x: -3, y: 1, z: 13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1658555543}
@@ -10168,6 +10188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &1578371976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11002,6 +11023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &1713766840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11889,6 +11911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &1920105600
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12873,6 +12896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &2098248646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12948,6 +12972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
+  timer: 1
 --- !u!23 &2104848944
 MeshRenderer:
   m_ObjectHideFlags: 0
