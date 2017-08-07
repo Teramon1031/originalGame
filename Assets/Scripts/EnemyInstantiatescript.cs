@@ -24,7 +24,7 @@ public class EnemyInstantiatescript : MonoBehaviour {
 		Vector3 PosB = this.transform.position;
 		float dis = Vector3.Distance (PosA,PosB);
 
-		if (dis < 10) {
+		if (dis < 7) {
 			PlayerIsNear = true;
 		} else { 
 			PlayerIsNear = false;
