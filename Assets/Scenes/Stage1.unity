@@ -586,7 +586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &99695527
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -995,6 +996,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114248763771333234, guid: f59f50cf3acb346c88afb0337110d325,
+        type: 2}
+      propertyPath: EnemyAnim
+      value: 
+      objectReference: {fileID: 1851302790}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   m_IsPrefabParent: 0
@@ -1109,80 +1115,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4942369868686358, guid: 5c20cb8d5c50c4f85a251f468ba5a654,
     type: 2}
   m_PrefabInternal: {fileID: 2007398401}
---- !u!1 &181311231
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 181311232}
-  - component: {fileID: 181311234}
-  - component: {fileID: 181311233}
-  m_Layer: 5
-  m_Name: DoorCloseText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &181311232
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 181311231}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1576127255}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.34878075, y: 0.11400001}
-  m_AnchorMax: {x: 0.6515615, y: 0.2105484}
-  m_AnchoredPosition: {x: 0.79999924, y: 0.1000061}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &181311233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 181311231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Press Shift To Close
---- !u!222 &181311234
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 181311231}
 --- !u!4 &202407333 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4942369868686358, guid: 5c20cb8d5c50c4f85a251f468ba5a654,
@@ -6309,7 +6241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &637716893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6390,7 +6323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &652609771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6777,7 +6711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &753046166
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8499,7 +8434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &1145791753
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8537,80 +8473,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4942369868686358, guid: 5c20cb8d5c50c4f85a251f468ba5a654,
     type: 2}
   m_PrefabInternal: {fileID: 1017873517}
---- !u!1 &1180973337
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1180973338}
-  - component: {fileID: 1180973340}
-  - component: {fileID: 1180973339}
-  m_Layer: 5
-  m_Name: DoorOpenText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1180973338
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1180973337}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1576127255}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.34878075, y: 0.079}
-  m_AnchorMax: {x: 0.6515615, y: 0.24300002}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1180973339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1180973337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Press Shift To Open
---- !u!222 &1180973340
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1180973337}
 --- !u!1 &1192744192
 GameObject:
   m_ObjectHideFlags: 0
@@ -9066,7 +8928,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &1273588019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9250,7 +9113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &1347834765
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9957,7 +9821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 10
 --- !u!23 &1502990715
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10131,9 +9996,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1180973338}
-  - {fileID: 181311232}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10190,7 +10053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &1578371976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11025,7 +10889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &1713766840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11461,6 +11326,11 @@ Transform:
 --- !u!1 &1851302789 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325,
+    type: 2}
+  m_PrefabInternal: {fileID: 166130713}
+--- !u!95 &1851302790 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95044026647908468, guid: f59f50cf3acb346c88afb0337110d325,
     type: 2}
   m_PrefabInternal: {fileID: 166130713}
 --- !u!1 &1867300935
@@ -11913,7 +11783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &1920105600
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12898,7 +12769,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &2098248646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12974,7 +12846,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1851302789}
-  timer: 1
+  timer: 3
+  distance: 8
 --- !u!23 &2104848944
 MeshRenderer:
   m_ObjectHideFlags: 0

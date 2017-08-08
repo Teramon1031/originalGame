@@ -121,3 +121,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86cfbc4887b074cd0b1e285374372c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnim: {fileID: 95336450969952030, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
+    type: 2}

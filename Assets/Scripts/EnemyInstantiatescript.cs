@@ -13,6 +13,7 @@ public class EnemyInstantiatescript : MonoBehaviour {
 	private bool IsRenderered;
 	private bool TimeInterval;
 	public float timer;
+	public float distance;
 
 	void Start () {
 		timer = 0.0f;
@@ -24,7 +25,7 @@ public class EnemyInstantiatescript : MonoBehaviour {
 		Vector3 PosB = this.transform.position;
 		float dis = Vector3.Distance (PosA,PosB);
 
-		if (dis < 7) {
+		if (dis < distance) {
 			PlayerIsNear = true;
 		} else { 
 			PlayerIsNear = false;
