@@ -5283,9 +5283,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa594cefb01b24ef99c3ef967d356244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chalk: {fileID: 1769950945685336, guid: c4b5b05127fc443c69c1ee09aaf478c2, type: 2}
-  ChalkGrenade: {fileID: 1676204404871108, guid: cd5ab1bc2655c4f448b8e1efda5f65eb,
+  chalk: {fileID: 1769950945685336, guid: c4b5b05127fc443c69c1ee09aaf478c2, type: 2}
+  chalkGrenade: {fileID: 1676204404871108, guid: cd5ab1bc2655c4f448b8e1efda5f65eb,
     type: 2}
+  player: {fileID: 1946239506598618}
+  animator: {fileID: 95336450969952030}
 --- !u!114 &114807583727522170
 MonoBehaviour:
   m_ObjectHideFlags: 1

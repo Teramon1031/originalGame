@@ -5,42 +5,56 @@ using UnityEngine.UI;
 
 public class muzzleScript : MonoBehaviour {
 
-	public GameObject Chalk;
-	public GameObject ChalkGrenade;
-	private int ChalkNumber;
-	public static int ChalkPowder = 10;
+
+	public GameObject chalk;
+	public GameObject chalkGrenade;
 	public GameObject player;
 	public Animator animator;
-//	public Text ChalkNumberText;
+	public Text chalkText;
+	public Text chalkGrenadeText;
+	public static int chalkPowder;
+	public static int chalkNo;
 
 	void Awake () {
 		animator = player.GetComponent<Animator> ();
 	}
 
 	void Start () {
-//		ChalkNumber = 10;
-//		ChalkPowder = 5;
+		chalkNo = 10;
+		chalkPowder = 20;
 	}
 	
 
 	void Update () {
-//		if (ChalkNumber > 0) {
-		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			Instantiate (Chalk, this.transform.position, this.transform.rotation);
-//				ChalkNumber--;
+		if (chalkNo > 0) {
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+				Instantiate (chalk, this.transform.position, this.transform.rotation);
+				chalkNo--;
+			}
+		}
+
+		if (chalkPowder >= 5) {
+			if (Input.GetKeyDown (KeyCode.Alpha2)) {
+				Instantiate (chalkGrenade, this.transform.position, this.transform.rotation);
+				chalkPowder -= 5;
+			}
 		}
 		if (Input.GetKey (KeyCode.Alpha1) || Input.GetKey (KeyCode.Alpha2)) {
 			animator.SetBool ("Throw", true);
 		} else {
-			animator.SetBool("Throw",false);
+			animator.SetBool ("Throw", false);
 		}
-//		}
-//		if (ChalkPowder >= 5) {
-		if (Input.GetKeyDown (KeyCode.Alpha2)) {
-			Instantiate (ChalkGrenade, this.transform.position, this.transform.rotation);
-//				ChalkPowder -= 5;
+			
+		if (chalkNo <= 3) {
+			chalkText.text = "チョーク：\t" + "<color=#aa2222>" + chalkNo.ToString () + "</color>";
+		} else {
+			chalkText.text = "チョーク：\t" + "<color=#ffffff>" + chalkNo.ToString () + "</color>";
 		}
-//		}
-//		ChalkNumberText.text = "Chalk : \t" + ChalkNumber.ToString ();
+
+		if (Mathf.FloorToInt (chalkPowder / 5) <= 2) {
+			chalkGrenadeText.text = "チョーク爆弾：\t" + "<color=#aa2222>" + Mathf.FloorToInt (chalkPowder / 5).ToString () + "</color>";
+		} else {
+			chalkGrenadeText.text = "チョーク爆弾：\t" + "<color=#ffffff>" + Mathf.FloorToInt (chalkPowder / 5).ToString () + "</color>";
+		}
 	}
 }

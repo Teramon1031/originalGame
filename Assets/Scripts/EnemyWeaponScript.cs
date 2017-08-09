@@ -1,14 +1,13 @@
 ﻿/*敵の武器が飛んでいくようにする
- *プレイヤーに当たったらプレイヤーのHPを減らし武器は消滅
- */
+ *プレイヤーに当たったらプレイヤーのHPを減らし武器は消滅 */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyWeaponScript : MonoBehaviour {
-
-	private Rigidbody _rigidbody;
+	
 	public Animator playerAnim;
+	private Rigidbody _rigidbody;
 
 	void Awake () {
 		_rigidbody = this.GetComponent<Rigidbody> ();

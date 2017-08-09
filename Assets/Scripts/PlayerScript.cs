@@ -5,39 +5,37 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour {
-
-	private bool playerLife = true;
+	
 	public static int playerHP = 5;
-	private float interval;
-	private bool clear;
-	private Animator animator;
-
-//	public Text LifeText;
+	private float _interval;
+	private bool _playerLife = true;
+	private bool _clear;
+	private Animator _animator;
+	private Slider _slider;
 
 	void Awake () {
-		animator = GetComponent<Animator> ();
+		_animator = GetComponent<Animator> ();
+		_slider = GameObject.Find("Slider").GetComponent<Slider>();
 	}
 
 	void Update () {
-		interval += 1 * Time.deltaTime;
-		if (playerHP <= 0 && playerLife == true) {
-			playerLife = false;
-			animator.SetBool ("Death", true);
+		_interval += 1 * Time.deltaTime;
+		if (playerHP <= 0 && _playerLife == true) {
+			_playerLife = false;
+			_animator.SetBool ("Death", true);
 			Invoke ("LoadSceneGameOver", 2.0f);
 			playerHP = 5;
 		}
-		if (interval >= 10) {
+		if (_interval >= 10) {
 			if (playerHP < 5) {
 				playerHP++;
 			}
-			interval = 0;
+			_interval = 0;
 		}
 		if (playerHP <= 0) {
 			playerHP = 0;
 		}
-
-//		LifeText.text = "LIFE : \t" + playerHP.ToString ();
-
+		_slider.value = playerHP;
 	}
 	void OnTriggerEnter(Collider col){
 			SceneManager.LoadScene ("Title");

@@ -14,11 +14,12 @@ public class enemyScript : MonoBehaviour {
 	public Transform target;
 	public Transform muzzle;
 	public GameObject weaponA;
-	private float interval;
-	private int EnemyHP = 3;
-	private bool enemyWalk;
-	private bool enemyLive;
-	public Animator EnemyAnim;
+	public Animator enemyAnim;
+	private float _interval;
+	private int _enemyHP = 3;
+	private bool _enemyWalk;
+	private bool _enemyLive;
+
 	NavMeshAgent agent;
 
 	void Awake () {
@@ -26,53 +27,53 @@ public class enemyScript : MonoBehaviour {
 	}
 
 	void Start () {
-		enemyWalk = true;
-		enemyLive = true;
+		_enemyWalk = true;
+		_enemyLive = true;
 	}
 		
 	void Update () {
-		if (enemyWalk) {
+		if (_enemyWalk) {
 			agent.SetDestination (target.position);
 		}
-		if (EnemyHP <= 0) {
-			enemyWalk = false;
-			enemyLive = false;
-			EnemyAnim.SetBool ("EnemyDeath", true);
+		if (_enemyHP <= 0) {
+			_enemyWalk = false;
+			_enemyLive = false;
+			enemyAnim.SetBool ("EnemyDeath", true);
 			Destroy (this.gameObject, 0.5f);
 
 		}
-		interval += 1 * Time.deltaTime;
-		if (interval > 3) {
+		_interval += 1 * Time.deltaTime;
+		if (_interval > 3) {
 			Instantiate (weaponA, muzzle.transform.position, muzzle.transform.rotation);
-			interval = 0;
+			_interval = 0;
 		}
 	}
 
 	void OnCollisionEnter(Collision col){
-		if (col.gameObject.tag == "player" && enemyLive) {
+		if (col.gameObject.tag == "player" && _enemyLive) {
 			PlayerScript.playerHP = 0;
 		}
 		if (col.gameObject.tag == "chalk") {
-			EnemyHP--;
-			if (EnemyHP > 0) {
-				enemyWalk = false;
-				EnemyAnim.SetBool ("EnemyDamage", true);
+			_enemyHP--;
+			if (_enemyHP > 0) {
+				_enemyWalk = false;
+				enemyAnim.SetBool ("EnemyDamage", true);
 				Invoke ("EnemyDamageSetBoolFalse", 1.0f);
 			}
 		}
 		if (col.gameObject.tag == "ChalkGrenade") {
-			EnemyHP -= 3;
-			if (EnemyHP > 0) {
-				enemyWalk = false;
-				EnemyAnim.SetBool ("EnemyDamage", true);
+			_enemyHP -= 3;
+			if (_enemyHP > 0) {
+				_enemyWalk = false;
+				enemyAnim.SetBool ("EnemyDamage", true);
 				Invoke ("EnemyDamageSetBoolFalse", 1.0f);
 			}
 		}
 	}
 
 	void EnemyDamageSetBoolFalse(){
-		EnemyAnim.SetBool ("EnemyDamage", false);
-		enemyWalk = true;
+		enemyAnim.SetBool ("EnemyDamage", false);
+		_enemyWalk = true;
 	}
  
 }

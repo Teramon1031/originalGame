@@ -2438,10 +2438,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f55725f0f09be4e3ab80d529abdc5cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  target: {fileID: 0}
+  player: {fileID: 1946239506598618, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+  target: {fileID: 4216891014316490, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
   muzzle: {fileID: 4778289988517138}
   weaponA: {fileID: 1583240173485652, guid: 40e8170715c52444786573f372eaecd6, type: 2}
+  enemyAnim: {fileID: 95044026647908468}
 --- !u!136 &136658999959947064
 CapsuleCollider:
   m_ObjectHideFlags: 1
