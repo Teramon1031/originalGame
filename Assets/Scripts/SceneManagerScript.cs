@@ -19,4 +19,7 @@ public class SceneManagerScript : MonoBehaviour {
 		SceneManager.LoadScene ("Stage1");
 	}
 
+	public void GameStart3 () {
+		SceneManager.LoadScene ("Stage3");
+	}
 }
