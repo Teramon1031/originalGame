@@ -10,8 +10,8 @@ using UnityEngine.AI;
 
 public class enemyScript : MonoBehaviour {
 	
-	public GameObject player;
-	public Transform target;
+	private GameObject _player;
+	private Transform _target;
 	public Transform muzzle;
 	public GameObject weaponA;
 	public Animator enemyAnim;
@@ -24,6 +24,7 @@ public class enemyScript : MonoBehaviour {
 
 	void Awake () {
 		agent = GetComponent<NavMeshAgent> ();
+		_player = GameObject.FindGameObjectWithTag ("player");
 	}
 
 	void Start () {
@@ -32,8 +33,9 @@ public class enemyScript : MonoBehaviour {
 	}
 		
 	void Update () {
+		_target = _player.transform;
 		if (_enemyWalk) {
-			agent.SetDestination (target.position);
+			agent.SetDestination (_target.position);
 		}
 		if (_enemyHP <= 0) {
 			_enemyWalk = false;

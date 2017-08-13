@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &99695527
@@ -1064,67 +1064,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c20cb8d5c50c4f85a251f468ba5a654, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &166130713
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4266973433430320, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4266973433430320, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -5.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4266973433430320, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4266973433430320, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4266973433430320, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4266973433430320, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4266973433430320, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4266973433430320, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114248763771333234, guid: f59f50cf3acb346c88afb0337110d325,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1411789639}
-    - target: {fileID: 114248763771333234, guid: f59f50cf3acb346c88afb0337110d325,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1411789646}
-    - target: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114248763771333234, guid: f59f50cf3acb346c88afb0337110d325,
-        type: 2}
-      propertyPath: EnemyAnim
-      value: 
-      objectReference: {fileID: 1851302790}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &172510922
 Prefab:
   m_ObjectHideFlags: 0
@@ -1447,7 +1386,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 16}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &360759058
 Prefab:
@@ -2827,7 +2766,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 8, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &600399598
 Prefab:
@@ -6361,7 +6300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &637716893
@@ -6443,7 +6382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &652609771
@@ -6936,7 +6875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &753046166
@@ -7347,7 +7286,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 4, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &874531842 stripped
 Transform:
@@ -8670,7 +8609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &1145791753
@@ -9164,7 +9103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &1273588019
@@ -9349,7 +9288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &1347834765
@@ -9667,11 +9606,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1946239506598618, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
     type: 2}
   m_PrefabInternal: {fileID: 1411789638}
---- !u!4 &1411789646 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4216891014316490, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
-    type: 2}
-  m_PrefabInternal: {fileID: 1411789638}
 --- !u!1001 &1429764998
 Prefab:
   m_ObjectHideFlags: 0
@@ -9880,7 +9814,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 4, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1485313883 stripped
 Transform:
@@ -9934,7 +9868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 10
 --- !u!23 &1502990715
@@ -10175,7 +10109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &1578371976
@@ -10762,7 +10696,7 @@ Transform:
   - {fileID: 99695525}
   - {fileID: 1713766838}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1668537658
 Prefab:
@@ -11011,7 +10945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &1713766840
@@ -11568,16 +11502,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4167162836662138, guid: ac352fc3498694559be3751818b7f0d2,
     type: 2}
   m_PrefabInternal: {fileID: 607848721}
---- !u!1 &1851302789 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325,
-    type: 2}
-  m_PrefabInternal: {fileID: 166130713}
---- !u!95 &1851302790 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 95044026647908468, guid: f59f50cf3acb346c88afb0337110d325,
-    type: 2}
-  m_PrefabInternal: {fileID: 166130713}
 --- !u!1 &1867300935
 GameObject:
   m_ObjectHideFlags: 0
@@ -12127,7 +12051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &1920105600
@@ -13108,7 +13032,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4654336515499924, guid: fcd915b5d539c4d089b7aa44fd445e4c, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 23863271159507908, guid: fcd915b5d539c4d089b7aa44fd445e4c,
         type: 2}
@@ -13165,7 +13089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &2098248646
@@ -13242,7 +13166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
-  enemy: {fileID: 1851302789}
+  enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 3
   distance: 8
 --- !u!23 &2104848944
