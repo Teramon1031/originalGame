@@ -15,7 +15,6 @@ namespace UnityChan
 
 	public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	{
-
 		public float animSpeed = 1.5f;				// アニメーション再生速度設定
 		public float lookSmoother = 3.0f;			// a smoothing setting for camera motion
 		public bool useCurves = true;				// Mecanimでカーブ調整を使うか設定する
@@ -92,14 +91,15 @@ namespace UnityChan
 		
 			if (Input.GetButtonDown ("Jump")) {	// スペースキーを入力したら
 
-				//アニメーションのステートがLocomotionの最中のみジャンプできる
-				if (currentBaseState.nameHash == locoState) {
-					//ステート遷移中でなかったらジャンプできる
-					if (!anim.IsInTransition (0)) {
-						rb.AddForce (Vector3.up * jumpPower, ForceMode.VelocityChange);
+//				アニメーションのステートがLocomotionの最中のみジャンプできる
+//				if (currentBaseState.nameHash == locoState) {
+//					ステート遷移中でなかったらジャンプできる
+//					if (!anim.IsInTransition (0)) {
+				rb.AddForce (Vector3.up * jumpPower, ForceMode.VelocityChange);
+					rb.AddForce (Vector3.forward * 2, ForceMode.VelocityChange);
 						anim.SetBool ("Jump", true);		// Animatorにジャンプに切り替えるフラグを送る
-					}
-				}
+//				}
+//				}
 			}
 		
 
@@ -177,18 +177,6 @@ namespace UnityChan
 				}
 			}
 		}
-
-		/*void OnGUI ()
-		{
-			GUI.Box (new Rect (Screen.width - 260, 10, 250, 150), "Interaction");
-			GUI.Label (new Rect (Screen.width - 245, 30, 250, 30), "Up/Down Arrow : Go Forwald/Go Back");
-			GUI.Label (new Rect (Screen.width - 245, 50, 250, 30), "Left/Right Arrow : Turn Left/Turn Right");
-			GUI.Label (new Rect (Screen.width - 245, 70, 250, 30), "Hit Space key while Running : Jump");
-			GUI.Label (new Rect (Screen.width - 245, 90, 250, 30), "Hit Spase key while Stopping : Rest");
-			GUI.Label (new Rect (Screen.width - 245, 110, 250, 30), "Left Control : Front Camera");
-			GUI.Label (new Rect (Screen.width - 245, 130, 250, 30), "Alt : LookAt Camera");
-		}*/
-
 
 		// キャラクターのコライダーサイズのリセット関数
 		void resetCollider ()

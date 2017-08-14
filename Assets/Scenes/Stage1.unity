@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.42647058, g: 0.42647058, b: 0.42647058, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.1
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &99695527
 MeshRenderer:
@@ -6301,7 +6301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &637716893
 MeshRenderer:
@@ -6383,7 +6383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &652609771
 MeshRenderer:
@@ -6876,7 +6876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &753046166
 MeshRenderer:
@@ -8157,6 +8157,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c20cb8d5c50c4f85a251f468ba5a654, type: 2}
   m_IsPrefabParent: 0
+--- !u!20 &1073744792 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20292986803170118, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
+    type: 2}
+  m_PrefabInternal: {fileID: 1411789638}
 --- !u!1001 &1093255331
 Prefab:
   m_ObjectHideFlags: 0
@@ -9104,7 +9109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &1273588019
 MeshRenderer:
@@ -9289,7 +9294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &1347834765
 MeshRenderer:
@@ -9598,6 +9603,48 @@ Prefab:
       propertyPath: chalkGrenadeText
       value: 
       objectReference: {fileID: 25795326}
+    - target: {fileID: 114986234346781868, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
+        type: 2}
+      propertyPath: jumpPower
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279884923832032, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.13052616
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279884923832032, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9914449
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279884923832032, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4279884923832032, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164144867848870, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.13052616
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164144867848870, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9914449
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164144867848870, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164144867848870, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114959161376536010, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec,
+        type: 2}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1073744792}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
   m_IsPrefabParent: 0
@@ -9869,7 +9916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 10
 --- !u!23 &1502990715
 MeshRenderer:
@@ -10110,7 +10157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &1578371976
 MeshRenderer:
@@ -10946,7 +10993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &1713766840
 MeshRenderer:
@@ -12052,7 +12099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &1920105600
 MeshRenderer:
@@ -13090,7 +13137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &2098248646
 MeshRenderer:
@@ -13167,7 +13214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 3
+  timer: 5
   distance: 8
 --- !u!23 &2104848944
 MeshRenderer:

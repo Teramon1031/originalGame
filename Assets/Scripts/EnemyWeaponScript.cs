@@ -15,7 +15,7 @@ public class EnemyWeaponScript : MonoBehaviour {
 
 	void Start () {
 		this._rigidbody.AddForce (Vector3.up * 150);
-		this._rigidbody.AddRelativeForce (Vector3.forward * 250);
+		this._rigidbody.AddRelativeForce (Vector3.forward * 200);
 	}
 		
 	void OnCollisionEnter (Collision col) {

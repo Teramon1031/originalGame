@@ -34,7 +34,7 @@ public class EnemyInstantiatescript : MonoBehaviour {
 	//プレイヤーが生成ポイントに近づいたかつカメラに写っていない時に生成
 		timer -= Time.deltaTime;
 		if (timer <= 0.0f) {
-			if (IsRenderered == false && PlayerIsNear) { 
+			if (!IsRenderered && PlayerIsNear) { 
 				Instantiate (enemy, this.transform.position, transform.rotation);
 			}
 			timer = 3.0f;
