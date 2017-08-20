@@ -95,10 +95,12 @@ namespace UnityChan
 //				if (currentBaseState.nameHash == locoState) {
 //					ステート遷移中でなかったらジャンプできる
 //					if (!anim.IsInTransition (0)) {
+				if(RayScript.frontObject){
 				rb.AddForce (Vector3.up * jumpPower, ForceMode.VelocityChange);
 					rb.AddForce (Vector3.forward * 2, ForceMode.VelocityChange);
 						anim.SetBool ("Jump", true);		// Animatorにジャンプに切り替えるフラグを送る
 //				}
+				}
 //				}
 			}
 		

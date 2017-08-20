@@ -7,19 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour {
 
-	public void DoReplay () {
+	public void GoStage1 () {
 		SceneManager.LoadScene ("Stage1");
 	}
 
-	public void DoReturnToTitle () {
+	public void GoTitle () {
 		SceneManager.LoadScene ("Title");
 	}
 
-	public void GameStart1 () {
-		SceneManager.LoadScene ("Stage1");
-	}
-
-	public void GameStart3 () {
-		SceneManager.LoadScene ("Stage3");
+	public void GoBossBattle () {
+		SceneManager.LoadScene ("BossBattle");
 	}
 }

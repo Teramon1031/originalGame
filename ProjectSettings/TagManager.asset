@@ -10,6 +10,8 @@ TagManager:
   - EnemyWeapon
   - stage
   - ChalkGrenade
+  - gameOver
+  - gameClear
   layers:
   - Default
   - TransparentFX
