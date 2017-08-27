@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4654336515499924}
   - component: {fileID: 33686133312166952}
-  - component: {fileID: 114722564934064554}
   - component: {fileID: 136120199858161162}
   - component: {fileID: 23863271159507908}
   - component: {fileID: 54517337396652272}
+  - component: {fileID: 114638936405320160}
   m_Layer: 0
   m_Name: Chalk 1
   m_TagString: chalk
@@ -98,7 +98,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114722564934064554
+--- !u!114 &114638936405320160
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1769950945685336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 853631a2a06054b21b90f35370ff4efd, type: 3}
+  m_Script: {fileID: 11500000, guid: c5980ffb4e22f4412a6cbab273190879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   materials:
@@ -115,6 +115,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7cd927e39ef8143d59cd790048cd9432, type: 2}
   - {fileID: 2100000, guid: c01509d5f6dba4d158f70db82d9db530, type: 2}
   - {fileID: 2100000, guid: f31c0b1f524964bf6a30fc3360f8576a, type: 2}
+  text: {fileID: 1190413220495848, guid: 1e68ec1a4758946bc8745c566b0c07e7, type: 2}
 --- !u!136 &136120199858161162
 CapsuleCollider:
   m_ObjectHideFlags: 1

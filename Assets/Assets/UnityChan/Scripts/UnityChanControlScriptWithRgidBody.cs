@@ -89,18 +89,19 @@ namespace UnityChan
 				velocity *= backwardSpeed;	// 移動速度を掛ける
 			}
 		
-			if (Input.GetButtonDown ("Jump")) {	// スペースキーを入力したら
+			if (Input.GetButtonDown ("Jump") || Input.GetKeyDown(KeyCode.Space)) {	// スペースキーを入力したら
 
 //				アニメーションのステートがLocomotionの最中のみジャンプできる
 //				if (currentBaseState.nameHash == locoState) {
 //					ステート遷移中でなかったらジャンプできる
 //					if (!anim.IsInTransition (0)) {
-				if(RayScript.frontObject){
+//				if(RayScript.frontObject){
+				anim.SetBool ("Jump", true);		// Animatorにジャンプに切り替えるフラグを送る
 				rb.AddForce (Vector3.up * jumpPower, ForceMode.VelocityChange);
 					rb.AddForce (Vector3.forward * 2, ForceMode.VelocityChange);
-						anim.SetBool ("Jump", true);		// Animatorにジャンプに切り替えるフラグを送る
+						
 //				}
-				}
+//				}
 //				}
 			}
 		

@@ -39,7 +39,10 @@ public class muzzleScript : MonoBehaviour {
 				chalkPowder -= 5;
 			}
 		}
-		if (Input.GetKey (KeyCode.Alpha1) || Input.GetKey (KeyCode.Alpha2)) {
+
+
+
+		if (Input.GetKey (KeyCode.Alpha1) || Input.GetKey (KeyCode.Alpha2) || Input.GetKey (KeyCode.Alpha3)) {
 			animator.SetBool ("Throw", true);
 		} else {
 			animator.SetBool ("Throw", false);
@@ -48,13 +51,13 @@ public class muzzleScript : MonoBehaviour {
 		if (chalkNo <= 3) {
 			chalkText.text = "チョーク：\t" + "<color=#aa2222>" + chalkNo.ToString () + "</color>";
 		} else {
-			chalkText.text = "チョーク：\t" + "<color=#ffffff>" + chalkNo.ToString () + "</color>";
+			chalkText.text = "チョーク：\t" + "<color=#000000>" + chalkNo.ToString () + "</color>";
 		}
 
 		if (Mathf.FloorToInt (chalkPowder / 5) <= 2) {
 			chalkGrenadeText.text = "チョーク爆弾：\t" + "<color=#aa2222>" + Mathf.FloorToInt (chalkPowder / 5).ToString () + "</color>";
 		} else {
-			chalkGrenadeText.text = "チョーク爆弾：\t" + "<color=#ffffff>" + Mathf.FloorToInt (chalkPowder / 5).ToString () + "</color>";
+			chalkGrenadeText.text = "チョーク爆弾：\t" + "<color=#000000>" + Mathf.FloorToInt (chalkPowder / 5).ToString () + "</color>";
 		}
 	}
 }

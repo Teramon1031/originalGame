@@ -5,9 +5,7 @@ using UnityEngine;
 public class ClearHanteiScript : MonoBehaviour {
 
 //	void Update() {
-//		if(){
-//			
-//		}
+
 //}
 //	public static bool GetBool(string key, bool stage1Clear){
 //		var value = PlayerPrefs.GetInt (key, stage1Clear ? 1 : 0);

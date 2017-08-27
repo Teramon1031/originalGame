@@ -48,10 +48,16 @@ public class PlayerScript : MonoBehaviour {
 		}
 		_slider.value = playerHP;
 	}
-	void OnTriggerEnter(Collider col){
-		gcText.SetActive (true);
-		gcButA.SetActive (true);
-		gcButB.SetActive (true);
+
+	void OnColliderEnter(Collision col){
+		if (col.gameObject.tag == "clearBlock") {
+			gcText.SetActive (true);
+			gcButA.SetActive (true);
+			gcButB.SetActive (true);
+		}
+		if (col.gameObject.tag == "gameOverBlock") {
+			GameOver ();
+		}
 //		ClearHanteiScript.SetBool (DataKey, true);
 	}
 

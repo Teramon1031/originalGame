@@ -15,6 +15,7 @@ public class enemyScript : MonoBehaviour {
 	public Transform muzzle;
 	public GameObject weaponA;
 	public Animator enemyAnim;
+	public GameObject chalk;
 	private float _interval;
 	private int _enemyHP = 3;
 	private bool _enemyWalk;
@@ -42,7 +43,9 @@ public class enemyScript : MonoBehaviour {
 			_enemyLive = false;
 			enemyAnim.SetBool ("EnemyDeath", true);
 			Destroy (this.gameObject, 0.5f);
-
+			for (int i = 0; i < 5; i++) {
+				Instantiate (chalk, transform.position, transform.rotation);
+			}
 		}
 		_interval += 1 * Time.deltaTime;
 		if (_interval > 3) {
