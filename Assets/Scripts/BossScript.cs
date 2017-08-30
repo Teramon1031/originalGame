@@ -46,13 +46,18 @@ public class BossScript : MonoBehaviour {
 			bossLife = false;
 		}
 	}
+
+	void EnemyDamageSetBoolFalse(){
+		_anim.SetBool ("EnemyDamage", false);
+	}
+
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "eraser") {
 			bossHP--;
 			_anim.SetBool ("EnemyDamage",true);
 			Destroy (col.gameObject);
 			Debug.Log (bossHP);
-			_anim.SetBool ("EnemyDamege", false);
+			Invoke ("EnemyDamageSetBoolFalse", 1.0f);
 		}	
 	}
 }

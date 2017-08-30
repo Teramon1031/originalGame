@@ -5,18 +5,20 @@ using UnityEngine.UI;
 
 public class ClearHanteiScript : MonoBehaviour {
 
-	public Button bossButton;
+	int SavedKey = 0;
 
 	void Start() {
-		PlayerPrefs.SetInt ("CLEARSTAGE", 0);
-		bossButton.interactable = false;
+		PlayerPrefs.SetInt ("Savedint", 0);
 	}
 
-	void Update() {
-		int ClearStage = PlayerPrefs.GetInt("CLEARSTAGE");
-		if (ClearStage == 1) {
-			bossButton.interactable = true;
-		}
-
+	public static void SavedCleared(int a){
+		PlayerPrefs.SetInt ("Savedint", a);
+		int b = PlayerPrefs.GetInt ("Savedint");
+		PlayerPrefs.Save ();
+	}
+	public static int LoadCleared(){
+		int loadedScore;
+		loadedScore = PlayerPrefs.GetInt ("Savedint");
+		return loadedScore;
 	}
 }

@@ -41,8 +41,8 @@ public class enemyScript1 : MonoBehaviour {
 		if (_enemyHP <= 0 && _enemyLive) {
 			_enemyWalk = false;
 			enemyAnim.SetBool ("EnemyDeath", true);
-
 			Instantiate (eraser, transform.position, transform.rotation);
+//			Debug.Log ("生成した٩( 'ω' )و");
 			_enemyLive = false;
 			Destroy (this.gameObject, 0.5f);
 		}

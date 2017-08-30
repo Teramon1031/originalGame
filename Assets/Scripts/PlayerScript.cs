@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour {
 
-	public static int playerHP = 5;
+	public static int playerHP;
 	public GameObject goText;
 	public GameObject goButA;
 	public GameObject goButB;
@@ -31,6 +31,10 @@ public class PlayerScript : MonoBehaviour {
 		gcButA.SetActive (false);
 		gcButB.SetActive (false);
 	}
+
+	void Start () {
+		playerHP = 10;
+	}
 		
 	void Update () {
 		Ray ();
@@ -50,13 +54,12 @@ public class PlayerScript : MonoBehaviour {
 		_slider.value = playerHP;
 	}
 
-	void OnColliderEnter(Collision col){
+	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "clearBlock" && !BossScript.bossLife) {
 			gcText.SetActive (true);
 			gcButA.SetActive (true);
 			gcButB.SetActive (true);
-			PlayerPrefs.SetInt("CLEARSTAGE", 1);
-			Debug.Log("クリア！");
+			ClearHanteiScript.SavedCleared (1);
 		}
 		if (col.gameObject.tag == "gameOverBlock") {
 			GameOver ();
@@ -87,13 +90,18 @@ public class PlayerScript : MonoBehaviour {
 		Ray ray = new Ray(transform.position, transform.forward);
 		RaycastHit hit;
 //		Debug.Log (ray);
-		if (Physics.Raycast (ray, out hit, 1.5f)) {
-			if (hit.collider.gameObject.tag == "chalk" || 
-				hit.collider.gameObject.tag == "eraser") {
+		if (Physics.Raycast (ray, out hit, 2f)) {
+			if (hit.collider.gameObject.tag == "chalk") {
 				textE.SetActive (true);
 				if (Input.GetKeyDown (KeyCode.E)) {
 					Destroy (hit.collider.gameObject);
 					muzzleScript.chalkNo++;
+				}
+			} else if (hit.collider.gameObject.tag == "eraser") {
+				textE.SetActive (true);
+				if (Input.GetKeyDown (KeyCode.E)) {
+					Destroy (hit.collider.gameObject);
+					BossBattleMuzzleScript.bbEraserNo++;
 				}
 			}
 		} else {

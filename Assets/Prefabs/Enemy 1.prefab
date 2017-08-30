@@ -2441,7 +2441,7 @@ MonoBehaviour:
   muzzle: {fileID: 4778289988517138}
   weaponA: {fileID: 1583240173485652, guid: 40e8170715c52444786573f372eaecd6, type: 2}
   enemyAnim: {fileID: 95044026647908468}
-  eraser: {fileID: 1513973812628594, guid: be899bf656d6e488db45bfed0e087c1e, type: 2}
+  eraser: {fileID: 1436085738941154, guid: 2410e233a55a34b459b026298a7df2e7, type: 2}
 --- !u!136 &136658999959947064
 CapsuleCollider:
   m_ObjectHideFlags: 1
