@@ -42,7 +42,7 @@ public class enemyScript : MonoBehaviour {
 			_enemyWalk = false;
 			_enemyLive = false;
 			enemyAnim.SetBool ("EnemyDeath", true);
-			Destroy (this.gameObject, 0.5f);
+			Destroy (this.gameObject);
 			for (int i = 0; i < 5; i++) {
 				Instantiate (chalk, transform.position, transform.rotation);
 			}

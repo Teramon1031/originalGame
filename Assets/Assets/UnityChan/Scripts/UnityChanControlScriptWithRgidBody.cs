@@ -76,36 +76,33 @@ namespace UnityChan
 			currentBaseState = anim.GetCurrentAnimatorStateInfo (0);	// 参照用のステート変数にBase Layer (0)の現在のステートを設定する
 			rb.useGravity = true;//ジャンプ中に重力を切るので、それ以外は重力の影響を受けるようにする
 		
+				// 以下、キャラクターの移動処理
+				velocity = new Vector3 (0, 0, v);		// 上下のキー入力からZ軸方向の移動量を取得
+				// キャラクターのローカル空間での方向に変換
+				velocity = transform.TransformDirection (velocity);
+				//以下のvの閾値は、Mecanim側のトランジションと一緒に調整する
+				if (v > 0.1) {
+					velocity *= forwardSpeed;		// 移動速度を掛ける
+				} else if (v < -0.1) {
+					velocity *= backwardSpeed;	// 移動速度を掛ける
+				}
 		
-		
-			// 以下、キャラクターの移動処理
-			velocity = new Vector3 (0, 0, v);		// 上下のキー入力からZ軸方向の移動量を取得
-			// キャラクターのローカル空間での方向に変換
-			velocity = transform.TransformDirection (velocity);
-			//以下のvの閾値は、Mecanim側のトランジションと一緒に調整する
-			if (v > 0.1) {
-				velocity *= forwardSpeed;		// 移動速度を掛ける
-			} else if (v < -0.1) {
-				velocity *= backwardSpeed;	// 移動速度を掛ける
-			}
-		
-			if (Input.GetButtonDown ("Jump") || Input.GetKeyDown(KeyCode.Space)) {	// スペースキーを入力したら
+				if (Input.GetButtonDown ("Jump") || Input.GetKeyDown (KeyCode.Space)) {	// スペースキーを入力したら
 
 //				アニメーションのステートがLocomotionの最中のみジャンプできる
 //				if (currentBaseState.nameHash == locoState) {
 //					ステート遷移中でなかったらジャンプできる
 //					if (!anim.IsInTransition (0)) {
 //				if(RayScript.frontObject){
-				anim.SetBool ("Jump", true);		// Animatorにジャンプに切り替えるフラグを送る
-				rb.AddForce (Vector3.up * jumpPower, ForceMode.VelocityChange);
+					anim.SetBool ("Jump", true);		// Animatorにジャンプに切り替えるフラグを送る
+					rb.AddForce (Vector3.up * jumpPower, ForceMode.VelocityChange);
 					rb.AddForce (Vector3.forward * 2, ForceMode.VelocityChange);
 						
 //				}
 //				}
 //				}
-			}
+				}
 		
-
 			// 上下のキー入力でキャラクターを移動させる
 			transform.localPosition += velocity * Time.fixedDeltaTime;
 

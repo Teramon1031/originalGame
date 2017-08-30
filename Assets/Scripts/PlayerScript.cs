@@ -13,13 +13,13 @@ public class PlayerScript : MonoBehaviour {
 	public GameObject gcText;
 	public GameObject gcButA;
 	public GameObject gcButB;
+	public GameObject textE;
 	private float _interval;
 	private float _jump;
-	private bool _playerLife = true;
+	public static bool playerLife = true;
 	private bool _clear;
 	private Animator _animator;
 	private Slider _slider;
-	const string DataKey = "saveDataKey";
 
 	void Awake () {
 		_animator = GetComponent<Animator> ();
@@ -33,12 +33,13 @@ public class PlayerScript : MonoBehaviour {
 	}
 		
 	void Update () {
+		Ray ();
 		_interval += 1 * Time.deltaTime;
-		if (playerHP <= 0 && _playerLife) {
+		if (playerHP <= 0 && playerLife) {
 			GameOver ();
 		}
 		if (_interval >= 10) {
-			if (playerHP < 5) {
+			if (playerHP < 5 && playerLife) {
 				playerHP++;
 			}
 			_interval = 0;
@@ -50,13 +51,21 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void OnColliderEnter(Collision col){
-		if (col.gameObject.tag == "clearBlock") {
+		if (col.gameObject.tag == "clearBlock" && !BossScript.bossLife) {
 			gcText.SetActive (true);
 			gcButA.SetActive (true);
 			gcButB.SetActive (true);
+			PlayerPrefs.SetInt("CLEARSTAGE", 1);
+			Debug.Log("クリア！");
 		}
 		if (col.gameObject.tag == "gameOverBlock") {
 			GameOver ();
+			Debug.Log ("死んだ");
+		}
+		if (col.gameObject.tag == "gameclear") {
+			gcText.SetActive (true);
+			gcButA.SetActive (true);
+			gcButB.SetActive (true);
 		}
 //		ClearHanteiScript.SetBool (DataKey, true);
 	}
@@ -70,7 +79,26 @@ public class PlayerScript : MonoBehaviour {
 		float time = 0.0f;
 		time += Time.deltaTime;
 
-		_playerLife = false;
+		playerLife = false;
 		playerHP = 5;
+	}
+
+	void Ray (){
+		Ray ray = new Ray(transform.position, transform.forward);
+		RaycastHit hit;
+//		Debug.Log (ray);
+		if (Physics.Raycast (ray, out hit, 1.5f)) {
+			if (hit.collider.gameObject.tag == "chalk" || 
+				hit.collider.gameObject.tag == "eraser") {
+				textE.SetActive (true);
+				if (Input.GetKeyDown (KeyCode.E)) {
+					Destroy (hit.collider.gameObject);
+					muzzleScript.chalkNo++;
+				}
+			}
+		} else {
+			textE.SetActive (false);
+			
+		}
 	}
 }

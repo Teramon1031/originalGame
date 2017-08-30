@@ -41,9 +41,10 @@ public class enemyScript1 : MonoBehaviour {
 		if (_enemyHP <= 0 && _enemyLive) {
 			_enemyWalk = false;
 			enemyAnim.SetBool ("EnemyDeath", true);
-			Destroy (this.gameObject, 0.5f);
+
 			Instantiate (eraser, transform.position, transform.rotation);
 			_enemyLive = false;
+			Destroy (this.gameObject, 0.5f);
 		}
 		_interval += 1 * Time.deltaTime;
 		if (_interval > 3) {

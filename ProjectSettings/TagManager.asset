@@ -16,6 +16,8 @@ TagManager:
   - boss
   - clearBlock
   - gameOverBlock
+  - text
+  - gameclear
   layers:
   - Default
   - TransparentFX

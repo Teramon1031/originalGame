@@ -8,7 +8,7 @@ public class BossBattleMuzzleScript : MonoBehaviour {
 	public GameObject bbEraser;
 	public Text bbEraserNoText;
 	public static int bbEraserNo;
-
+	private Animator anim;
 
 	void Start () {
 		bbEraserNo = 0;

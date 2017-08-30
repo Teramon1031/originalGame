@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class BossScript : MonoBehaviour {
 
 	public static int bossHP;
+	public static bool bossLife;
 	public GameObject enemy;
 	public GameObject gcText;
 	public GameObject gcButA;
@@ -14,18 +15,20 @@ public class BossScript : MonoBehaviour {
 	private float _timer;
 	private GameObject _player;
 	private Transform _target;
-
+	private Animator _anim;
 
 	NavMeshAgent agent;
 
 	void Awake () {
 		agent = GetComponent<NavMeshAgent> ();
 		_player = GameObject.FindGameObjectWithTag ("player");
+		_anim = GetComponent<Animator> ();
 	}
 
 	void Start () {
 		_timer = 0.0f;
-		bossHP = 10;
+		bossHP = 8;
+		bossLife = true;
 	}
 
 	void Update () {
@@ -40,11 +43,16 @@ public class BossScript : MonoBehaviour {
 			gcText.SetActive (true);
 			gcButA.SetActive (true);
 			gcButB.SetActive (true);
+			bossLife = false;
 		}
 	}
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "eraser") {
 			bossHP--;
-		}			
+			_anim.SetBool ("EnemyDamage",true);
+			Destroy (col.gameObject);
+			Debug.Log (bossHP);
+			_anim.SetBool ("EnemyDamege", false);
+		}	
 	}
 }

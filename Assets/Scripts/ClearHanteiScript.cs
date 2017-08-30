@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClearHanteiScript : MonoBehaviour {
 
-//	void Update() {
+	public Button bossButton;
 
-//}
-//	public static bool GetBool(string key, bool stage1Clear){
-//		var value = PlayerPrefs.GetInt (key, stage1Clear ? 1 : 0);
-//		return value == 1;
-//	}
-//
-//	public static void SetBool(string key, bool value){
-//		PlayerPrefs.SetInt (key, value ? 1 : 0);
-//	}
+	void Start() {
+		PlayerPrefs.SetInt ("CLEARSTAGE", 0);
+		bossButton.interactable = false;
+	}
+
+	void Update() {
+		int ClearStage = PlayerPrefs.GetInt("CLEARSTAGE");
+		if (ClearStage == 1) {
+			bossButton.interactable = true;
+		}
+
+	}
 }

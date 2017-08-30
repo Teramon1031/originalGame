@@ -11,21 +11,12 @@ public class BbEraserScript1 : MonoBehaviour {
 	}
 
 	void Start () {
-		this._rigidbody.AddRelativeForce (-transform.forward * 40);
-		this._rigidbody.AddForce (Vector3.up * 15);
+		this._rigidbody.AddRelativeForce (-transform.forward * 80);
+		this._rigidbody.AddForce (Vector3.up * 30);
 	}
 
 	void Update () {
 		
 	}
 
-	void OnCollisionEnter(Collision col){
-		if (col.gameObject.tag == "boss") {
-			BossScript.bossHP--;
-			Destroy (this.gameObject);
-		}
-		if (col.gameObject.tag == "enemy") { 
-			Destroy (this.gameObject);
-		}
-	}
 }

@@ -2441,7 +2441,7 @@ MonoBehaviour:
   muzzle: {fileID: 4778289988517138}
   weaponA: {fileID: 1583240173485652, guid: 40e8170715c52444786573f372eaecd6, type: 2}
   enemyAnim: {fileID: 95044026647908468}
-  chalk: {fileID: 1769950945685336, guid: c4b5b05127fc443c69c1ee09aaf478c2, type: 2}
+  chalk: {fileID: 1769950945685336, guid: fcd915b5d539c4d089b7aa44fd445e4c, type: 2}
 --- !u!136 &136658999959947064
 CapsuleCollider:
   m_ObjectHideFlags: 1
