@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		if (col.gameObject.tag == "clearBlock" && !BossScript.bossLife) {
+		if (col.gameObject.tag == "clearBlock") {
 			gcText.SetActive (true);
 			gcButA.SetActive (true);
 			gcButB.SetActive (true);
@@ -63,14 +63,14 @@ public class PlayerScript : MonoBehaviour {
 		}
 		if (col.gameObject.tag == "gameOverBlock") {
 			GameOver ();
-			Debug.Log ("死んだ");
+//			Debug.Log ("死んだ");
 		}
-		if (col.gameObject.tag == "gameclear") {
+		if (col.gameObject.tag == "gameclear" && BossScript.bossLife == false) {
 			gcText.SetActive (true);
 			gcButA.SetActive (true);
 			gcButB.SetActive (true);
 		}
-//		ClearHanteiScript.SetBool (DataKey, true);
+
 	}
 
 	void GameOver () {
@@ -91,7 +91,7 @@ public class PlayerScript : MonoBehaviour {
 		RaycastHit hit;
 //		Debug.Log (ray);
 		if (Physics.Raycast (ray, out hit, 2f)) {
-			if (hit.collider.gameObject.tag == "chalk") {
+			if (hit.collider.gameObject.tag == "chalk" || hit.collider.gameObject.tag == "chalk1" ) {
 				textE.SetActive (true);
 				if (Input.GetKeyDown (KeyCode.E)) {
 					Destroy (hit.collider.gameObject);

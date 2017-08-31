@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114638936405320160}
   m_Layer: 0
   m_Name: Chalk 1
-  m_TagString: chalk
+  m_TagString: chalk1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

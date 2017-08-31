@@ -13,7 +13,7 @@ public class BossScript : MonoBehaviour {
 	public GameObject gcButA;
 	public GameObject gcButB;
 	private float _timer;
-	private GameObject _player;
+	public GameObject _player;
 	private Transform _target;
 	private Animator _anim;
 
@@ -21,28 +21,31 @@ public class BossScript : MonoBehaviour {
 
 	void Awake () {
 		agent = GetComponent<NavMeshAgent> ();
-		_player = GameObject.FindGameObjectWithTag ("player");
+//		_player = GameObject.FindGameObjectWithTag ("player");
 		_anim = GetComponent<Animator> ();
 	}
 
 	void Start () {
 		_timer = 0.0f;
-		bossHP = 8;
+		bossHP = 3;
 		bossLife = true;
 	}
 
 	void Update () {
 		_target = _player.transform;
 		_timer -= Time.deltaTime;
-		agent.SetDestination (_target.position);
-		if (_timer <= 0.0f) {
-			Instantiate (enemy, transform.position, transform.rotation);
-			_timer = 8.0f;
+		if (bossLife) {
+			agent.SetDestination (_target.position);
+			if (_timer <= 0.0f) {
+				Instantiate (enemy, transform.position, transform.rotation);
+				_timer = 8.0f;
+			}
 		}
 		if (bossHP <= 0) {
-			gcText.SetActive (true);
-			gcButA.SetActive (true);
-			gcButB.SetActive (true);
+			_anim.SetBool ("EnemyDeath",true);
+//			gcText.SetActive (true);
+//			gcButA.SetActive (true);
+//			gcButB.SetActive (true);
 			bossLife = false;
 		}
 	}
@@ -54,10 +57,12 @@ public class BossScript : MonoBehaviour {
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "eraser") {
 			bossHP--;
-			_anim.SetBool ("EnemyDamage",true);
-			Destroy (col.gameObject);
-			Debug.Log (bossHP);
-			Invoke ("EnemyDamageSetBoolFalse", 1.0f);
+			if (bossLife) {
+				_anim.SetBool ("EnemyDamage", true);
+				Destroy (col.gameObject);
+//			Debug.Log (bossHP);
+				Invoke ("EnemyDamageSetBoolFalse", 1.0f);
+			}
 		}	
 	}
 }

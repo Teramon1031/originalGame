@@ -635,7 +635,7 @@ ModelImporter:
       name: DAMAGED01
       takeName: Take 001
       firstFrame: 10
-      lastFrame: 89
+      lastFrame: 41
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

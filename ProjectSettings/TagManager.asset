@@ -18,6 +18,7 @@ TagManager:
   - gameOverBlock
   - text
   - gameclear
+  - chalk1
   layers:
   - Default
   - TransparentFX

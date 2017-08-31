@@ -24,8 +24,10 @@ public class SceneManagerScript : MonoBehaviour {
 
 	public void GoBossBattle () {
 		int Clearint = ClearHanteiScript.LoadCleared ();
-		SceneManager.LoadScene ("BossBattle");
-		audio.Play ();
+		if (Clearint == 1) {
+			SceneManager.LoadScene ("BossBattle");
+			audio.Play ();
+		}
 	}
 
 	public void SousaSetume () {
