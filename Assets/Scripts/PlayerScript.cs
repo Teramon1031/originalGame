@@ -34,6 +34,7 @@ public class PlayerScript : MonoBehaviour {
 
 	void Start () {
 		playerHP = 10;
+		playerLife = true;
 	}
 		
 	void Update () {
@@ -42,6 +43,7 @@ public class PlayerScript : MonoBehaviour {
 		if (playerHP <= 0 && playerLife) {
 			GameOver ();
 		}
+
 		if (_interval >= 10) {
 			if (playerHP < 5 && playerLife) {
 				playerHP++;
@@ -81,9 +83,7 @@ public class PlayerScript : MonoBehaviour {
 		_animator.SetBool ("Death", true);
 		float time = 0.0f;
 		time += Time.deltaTime;
-
 		playerLife = false;
-		playerHP = 5;
 	}
 
 	void Ray (){
