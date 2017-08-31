@@ -514,7 +514,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2610,7 +2610,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2944,7 +2944,7 @@ GameObject:
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &99695525
 Transform:
   m_ObjectHideFlags: 0
@@ -2952,7 +2952,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 99695524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 1, z: -18}
+  m_LocalPosition: {x: 1.049, y: 1, z: -17.806}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1658555543}
@@ -3124,7 +3124,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10604,7 +10604,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d3e02492229e2460faefbfdc2175edcd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13423,7 +13423,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14274,7 +14274,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d3e02492229e2460faefbfdc2175edcd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21311,7 +21311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 5
+  timer: 6
   distance: 8
 --- !u!23 &637716893
 MeshRenderer:
@@ -21537,7 +21537,7 @@ MonoBehaviour:
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
   timer: 5
-  distance: 8
+  distance: 6
 --- !u!23 &652609771
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22566,7 +22566,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26486,7 +26486,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30988,7 +30988,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33005,7 +33005,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34777,7 +34777,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1273588016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 1, z: -14}
+  m_LocalPosition: {x: 3, y: 1, z: -11.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1658555543}
@@ -34796,7 +34796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 5
+  timer: 3
   distance: 8
 --- !u!23 &1273588019
 MeshRenderer:
@@ -35891,7 +35891,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36602,7 +36602,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1347834762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 1, z: 3}
+  m_LocalPosition: {x: -1.68, y: 1, z: 0.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1658555543}
@@ -36621,7 +36621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 5
+  timer: 6
   distance: 8
 --- !u!23 &1347834765
 MeshRenderer:
@@ -37709,7 +37709,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37792,7 +37792,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38385,7 +38385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4216891014316490, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4216891014316490, guid: 394a3aab5fc0f426ea95dbbc8f5b11ec, type: 2}
       propertyPath: m_LocalRotation.x
@@ -43471,7 +43471,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44269,8 +44269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 5
-  distance: 8
+  timer: 6
+  distance: 10
 --- !u!23 &1578371976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44334,7 +44334,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47370,7 +47370,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47541,7 +47541,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48112,7 +48112,7 @@ GameObject:
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1713766838
 Transform:
   m_ObjectHideFlags: 0
@@ -52054,7 +52054,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d3e02492229e2460faefbfdc2175edcd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52291,7 +52291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 5
+  timer: 2
   distance: 4
 --- !u!23 &1920105600
 MeshRenderer:
@@ -54323,7 +54323,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfbc47fc2ce249a0a9fe9f014c3c97c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57324,7 +57324,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2098248643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 1, z: -8}
+  m_LocalPosition: {x: -3, y: 1, z: -6.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1658555543}
@@ -57343,7 +57343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 5
+  timer: 2
   distance: 8
 --- !u!23 &2098248646
 MeshRenderer:
@@ -57424,7 +57424,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d3e02492229e2460faefbfdc2175edcd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -57507,8 +57507,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1411789639}
   enemy: {fileID: 1775322839359140, guid: f59f50cf3acb346c88afb0337110d325, type: 2}
-  timer: 5
-  distance: 8
+  timer: 6
+  distance: 10
 --- !u!23 &2104848944
 MeshRenderer:
   m_ObjectHideFlags: 0
